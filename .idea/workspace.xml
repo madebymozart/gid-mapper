@@ -13,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db66cdb-ef3b-4461-9068-8d93915ae5f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/xml/tinyxml2.cxx" afterPath="$PROJECT_DIR$/source/xml/tinyxml2.cxx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/xml/tinyxml2.hxx" afterPath="$PROJECT_DIR$/source/xml/tinyxml2.hxx" />
     </list>
@@ -27,7 +26,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tinyxml2.hxx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/xml/tinyxml2.hxx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+              <folding>
+                <element signature="e#1117#1281#0" expanded="true" />
+                <element signature="e#1288#1308#0" expanded="true" />
+                <element signature="e#1878#1925#0" expanded="true" />
+                <element signature="e#2070#2128#0" expanded="true" />
+                <element signature="e#2271#2477#0" expanded="true" />
+                <element signature="e#2567#2590#0" expanded="true" />
+                <element signature="e#2738#3253#0" expanded="true" />
+                <element signature="e#5491#5518#0" expanded="true" />
+                <element signature="e#8109#8124#0" expanded="true" />
+                <element signature="e#9450#9488#0" expanded="true" />
+                <element signature="e#52685#52722#0" expanded="true" />
+                <element signature="e#52800#52837#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tinyxml2.cxx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/xml/tinyxml2.cxx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="95" column="24" lean-forward="true" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+              <folding>
+                <element signature="e#1169#1214#0" expanded="true" />
+                <element signature="e#1221#1242#0" expanded="true" />
+                <element signature="e#1457#2140#0" expanded="true" />
+                <element signature="e#2284#3102#0" expanded="true" />
+                <element signature="e#46557#46587#0" expanded="true" />
+                <element signature="e#46784#46925#0" expanded="true" />
+                <element signature="e#47069#47424#0" expanded="true" />
+                <element signature="e#48916#49020#0" expanded="true" />
+                <element signature="e#50308#50358#0" expanded="true" />
+                <element signature="e#50484#50486#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -49,6 +93,8 @@
         <option value="$PROJECT_DIR$/src/mapper/mapper.cxx" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/source/xml/tinyxml2.hxx" />
+        <option value="$PROJECT_DIR$/source/xml/tinyxml2.cxx" />
       </list>
     </option>
   </component>
@@ -142,7 +188,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511307755952</updated>
       <workItem from="1511307757233" duration="18073000" />
-      <workItem from="1511401089010" duration="1732000" />
+      <workItem from="1511401089010" duration="1773000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1511404393265</created>
@@ -151,11 +197,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511404393265</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tinyxml">
+      <created>1511404538842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511404538842</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19805000" />
+    <option name="totallyTimeSpent" value="19846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -360,6 +413,46 @@
         <state relative-caret-position="75">
           <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/xml/tinyxml2.hxx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <folding>
+            <element signature="e#1117#1281#0" expanded="true" />
+            <element signature="e#1288#1308#0" expanded="true" />
+            <element signature="e#1878#1925#0" expanded="true" />
+            <element signature="e#2070#2128#0" expanded="true" />
+            <element signature="e#2271#2477#0" expanded="true" />
+            <element signature="e#2567#2590#0" expanded="true" />
+            <element signature="e#2738#3253#0" expanded="true" />
+            <element signature="e#5491#5518#0" expanded="true" />
+            <element signature="e#8109#8124#0" expanded="true" />
+            <element signature="e#9450#9488#0" expanded="true" />
+            <element signature="e#52685#52722#0" expanded="true" />
+            <element signature="e#52800#52837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/xml/tinyxml2.cxx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="95" column="24" lean-forward="true" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+          <folding>
+            <element signature="e#1169#1214#0" expanded="true" />
+            <element signature="e#1221#1242#0" expanded="true" />
+            <element signature="e#1457#2140#0" expanded="true" />
+            <element signature="e#2284#3102#0" expanded="true" />
+            <element signature="e#46557#46587#0" expanded="true" />
+            <element signature="e#46784#46925#0" expanded="true" />
+            <element signature="e#47069#47424#0" expanded="true" />
+            <element signature="e#48916#49020#0" expanded="true" />
+            <element signature="e#50308#50358#0" expanded="true" />
+            <element signature="e#50484#50486#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
