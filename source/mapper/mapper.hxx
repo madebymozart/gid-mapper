@@ -1,10 +1,20 @@
 /**
  * Copyright (c) 2017 Mozart Louis
- * This code is licensed under MIT license (see LICENSE.txt for details)
+ * This code is licensed under MIT license (see LICENSE for details)
  */
 
 #ifndef __MAPPER_HXX__
 #define __MAPPER_HXX__
+
+#if defined _MSC_VER
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#else
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#define GetCurrentDir getcwd
+#endif
 
 /**
  * JSON Related Keys
@@ -66,7 +76,7 @@ class Mapper {
   /**
    * Execute the mapping of server mazes and saving them in a final directory
    */
-  void execute(std::list<std::string> map_files, const std::string &directory);
+  void execute(std::list<std::string> map_files, const std::string &directory, const std::string &output);
 
  private:
   /**
@@ -96,8 +106,20 @@ class Mapper {
             int dimension_y, const std::string &dir, const std::string &name);
 
   /**
-   * Direction Checkers. Ordered in priority
+   * Creates a directory
    */
+  void createDirectory(std::string dir);
+
+  /**
+   * returns a string of the current working directory.
+   *
+   * @return ~ Current working directory.
+   */
+  std::string getCurrentDirectory(void);
+
+  /**
+ * Direction Checkers. Ordered in priority
+ */
   bool isCross(std::unordered_set<std::string> &lookup);
   bool isHorizontalDown(std::unordered_set<std::string> &lookup);
   bool isHorizontalUp(std::unordered_set<std::string> &lookup);
@@ -205,4 +227,4 @@ inline int Mapper::getGIDFromJson(std::string gid) {
   return id;
 }
 
-#endif /// __MAPPER_HXX__
+#endif // __MAPPER_HXX__

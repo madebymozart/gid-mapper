@@ -4,9 +4,13 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+.idea/codeStyles/
 
 # iml files
 *.iml
+
+# .name files
+*.name
 
 # CMake
 cmake-build-debug/

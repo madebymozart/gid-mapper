@@ -8,7 +8,7 @@ Mapper::Mapper() = default;
 
 Mapper::~Mapper() = default;
 
-void Mapper::execute(std::list<std::string> map_files, const std::string &directory) {
+void Mapper::execute(std::list<std::string> map_files, const std::string &directory, const std::string &output) {
   /// As long as the file isn't bad and open, parse the json
   try {
     /// open the json file
@@ -34,7 +34,7 @@ void Mapper::execute(std::list<std::string> map_files, const std::string &direct
     /// Attempt to split
     auto ll = split(data, ',', dimension_x, dimension_y);
     map(ll, dimension_x, dimension_y);
-    save(ll, doc, dimension_x, dimension_y, directory, file);
+    save(ll, doc, dimension_x, dimension_y, output, file);
 
   }
 }
@@ -121,8 +121,20 @@ void Mapper::save(matrix &maze, tinyxml2::XMLDocument &doc, const int dimension_
   /// because it will always be a leftover comma.
   data.pop_back();
 
-  std::system(("mkdir " + dir + "../final/").c_str());
+  const auto final = getCurrentDirectory() + "\\" + dir;
+
+  createDirectory(final);
   doc.FirstChildElement("map")->FirstChildElement("layer")->FirstChildElement("data")->SetText(data.c_str());
-  doc.SaveFile((dir + "../final/" + name).c_str());
+  doc.SaveFile((final + name).data());
 }
 
+void Mapper::createDirectory(std::string dir) {
+  mkdir(dir.data());
+}
+
+std::string Mapper::getCurrentDirectory(void) {
+  char buff[FILENAME_MAX];
+  GetCurrentDir(buff, FILENAME_MAX);
+  std::string current_working_dir(buff);
+  return current_working_dir;
+}
